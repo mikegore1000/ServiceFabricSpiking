@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LoadTest Name="LoadTest1" Description="" Owner="" storage="c:\git\servicefabricspiking\src\loadtest\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="4ab9e165-dba6-4bde-bd57-622574ba339d" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
-    <Scenario Name="Default" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
-      <ThinkProfile Value="0" Pattern="Off" />
-      <LoadProfile Pattern="Constant" InitialUsers="25" />
+    <Scenario Name="Default" DelayBetweenIterations="1" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+      <ThinkProfile Value="0" Pattern="On" />
+      <LoadProfile Pattern="Constant" InitialUsers="60" />
       <TestMix>
         <TestProfile Name="WebTest1" Path="webtest1.webtest" Id="fd2674e5-5448-42f6-a374-1afe65e85497" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
@@ -421,7 +421,7 @@
     </CounterSet>
   </CounterSets>
   <RunConfigurations>
-    <RunConfiguration Name="Run Settings1" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="600" WarmupTime="0" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" AgentDiagnosticsLevel="Warning">
+    <RunConfiguration Name="Run Settings1" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="600" WarmupTime="0" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="5" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" AgentDiagnosticsLevel="Warning">
       <CounterSetMappings>
         <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
           <CounterSetReferences>

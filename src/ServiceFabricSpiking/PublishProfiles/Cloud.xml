@@ -22,7 +22,7 @@
   -->
   <ClusterConnectionParameters />
   <ApplicationParameterFile Path="..\ApplicationParameters\Local.1Node.xml" />
-  <UpgradeDeployment Mode="Monitored" Enabled="true">
-    <Parameters FailureAction="Rollback" UpgradeReplicaSetCheckTimeoutSec="1" Force="True" />
+  <UpgradeDeployment Mode="Monitored" Enabled="false">
+    <Parameters FailureAction="Rollback" UpgradeReplicaSetCheckTimeoutSec="1" Force="True" HealthCheckRetryTimeoutSec="5" HealthCheckStableDurationSec="5" UpgradeDomainTimeoutSec="300" />
   </UpgradeDeployment>
 </PublishProfile>
