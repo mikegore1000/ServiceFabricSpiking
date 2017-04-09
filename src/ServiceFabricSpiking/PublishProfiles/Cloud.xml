@@ -21,8 +21,8 @@
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
   <ClusterConnectionParameters />
-  <ApplicationParameterFile Path="..\ApplicationParameters\Local.1Node.xml" />
-  <UpgradeDeployment Mode="Monitored" Enabled="false">
+  <ApplicationParameterFile Path="..\ApplicationParameters\Local.5Node.xml" />
+  <UpgradeDeployment Mode="Monitored" Enabled="true">
     <Parameters FailureAction="Rollback" UpgradeReplicaSetCheckTimeoutSec="1" Force="True" HealthCheckRetryTimeoutSec="5" HealthCheckStableDurationSec="5" UpgradeDomainTimeoutSec="300" />
   </UpgradeDeployment>
 </PublishProfile>
