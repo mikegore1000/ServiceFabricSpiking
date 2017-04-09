@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Handlers\GatewayHandler.cs" />
+    <Compile Include="Handlers\GatewayRoute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OwinCommunicationListener.cs" />
     <Compile Include="Gateway.cs" />
