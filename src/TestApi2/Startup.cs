@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using Owin;
 
-namespace TestApi
+namespace TestApi2
 {
     public static class Startup
     {
@@ -11,7 +11,6 @@ namespace TestApi
         {
             // Configure Web API for self-host. 
             HttpConfiguration config = new HttpConfiguration();
-
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
