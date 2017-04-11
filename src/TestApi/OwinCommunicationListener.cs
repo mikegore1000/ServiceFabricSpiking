@@ -64,7 +64,7 @@ namespace TestApi
 
                 this.listeningAddress = string.Format(
                     CultureInfo.InvariantCulture,
-                    "https://+:{0}/{1}{2}/{3}/{4}finance/test",
+                    "https://+:{0}/{1}{2}/{3}/{4}finance/payments-test",
                     port,
                     string.IsNullOrWhiteSpace(this.appRoot)
                         ? string.Empty
@@ -77,7 +77,7 @@ namespace TestApi
             {
                 this.listeningAddress = string.Format(
                     CultureInfo.InvariantCulture,
-                    "https://+:{0}/{1}finance/test",
+                    "https://+:{0}/{1}finance/payments-test",
                     port,
                     string.IsNullOrWhiteSpace(this.appRoot)
                         ? string.Empty
